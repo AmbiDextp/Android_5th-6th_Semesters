@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -42,6 +44,21 @@ android {
 }
 
 dependencies {
+    implementation("io.coil-kt:coil-compose:2.0.0-rc01")
+    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.compose:compose-bom:2024.02.00")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.navigation:navigation-compose:2.9.6")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
